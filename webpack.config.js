@@ -13,7 +13,8 @@ module.exports = (env) => ({
     filename: 'bundle.js'
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'My website'
+    title: 'My website',
+    template: './src/index.html'
   })],
   module: {
     rules: [
